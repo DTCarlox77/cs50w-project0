@@ -1,0 +1,45 @@
+@import url('https://fonts.cdnfonts.com/css/wc-mano-negra?styles=906');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+    font-family: 'Monument';
+    src: url('/fonts/MonumentExtended-Regular.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Principal {
+    position: relative;
+    font-size: 400%;
+    font-weight: 200;
+    font-family: 'WC Mano Negra Bta', sans-serif;
+}
+
+.Objetos {
+    position: relative;
+    font-size: 150%;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+}

@@ -131,29 +131,8 @@ body {
   .Info {
     color: white;
   }
-  .Información {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15%;
-    margin: auto;
-    position: relative;
-  }
-  .Información h1 {
-    font-family: "Monument", "Helvetica", Arial, sans-serif;
-    font-weight: 100;
-  }
-  .Información p {
-    font-family: "Amiko", sans-serif;
-    font-size: 150%;
-  }
-  .Título_bienvenida {
-    max-width: 55%;
-    text-align: center;
-  }
   .Información_adicional_escuchar {
-    margin-top: 10px;
+    margin-top: 10%;
     display: inline-block;
     background-color: #7E54F6;
     color: white;
@@ -172,6 +151,122 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-family: "Monument", "Helvetica", Arial, sans-serif;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin: auto;
+  }
+  .Contenedor .Título_contenedor {
+    max-width: 70%;
+    text-align: center;
+  }
+  .Contenedor h1 {
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-weight: 100;
+  }
+  .Contenedor p {
+    padding-top: 5%;
+    font-family: "Amiko", sans-serif;
+    font-size: 150%;
+  }
+  .Contenedor .Información_adicional_bienvenida {
+    margin-top: 5%;
+    background-color: none;
+    color: white;
+    border: white solid 3px;
+    padding: 20px 55px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+  }
+  .galeria {
+    padding-top: 10%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .imagengaleria {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    margin-right: 22px;
+    cursor: pointer;
+    perspective: 1000px;
+    transition: transform 0.5s;
+  }
+  .imagengaleria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .imagengaleria:hover {
+    transform: rotateY(180deg);
+  }
+  .contenedor-trasero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+    opacity: 0;
+    transform: scaleX(-1);
+  }
+  .imagengaleria:hover .contenedor-trasero {
+    opacity: 1;
+    transform: rotateY(0) scaleX(-1);
+  }
+  .fondojapones {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    padding-top: 15%;
+  }
+  .fondojapones img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .fondojapones::before,
+  .fondojapones::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0)), linear-gradient(to bottom, rgba(0, 0, 0, 0), transparent 5%, transparent 20%, transparent 50%, rgb(0, 0, 0));
+    opacity: 0.9;
+    z-index: 1;
+  }
+  .fondojapones::before {
+    top: 0;
+  }
+  .fondojapones::after {
+    bottom: 0;
   }
   ::-webkit-scrollbar {
     width: 10px;
@@ -347,11 +442,85 @@ body {
     padding: 10px;
     position: relative;
   }
-  nav .logo {
-    margin-left: 20px;
+  .Contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    margin: auto;
   }
-  nav .menu-icon {
-    margin-right: 20px;
+  .Contenedor .Título_contenedor {
+    max-width: 70%;
+    text-align: center;
+  }
+  .Contenedor h1 {
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-weight: 100;
+    font-size: 150%;
+  }
+  .Contenedor p {
+    padding-top: 5%;
+    font-family: "Amiko", sans-serif;
+    font-size: 100%;
+  }
+  .Contenedor .Información_adicional_bienvenida {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: none;
+    color: white;
+    border: white solid 3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+  }
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .imagengaleria {
+    position: relative;
+    width: 315px;
+    height: 410px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    perspective: 1000px;
+    transition: transform 0.5s;
+  }
+  .imagengaleria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contenedor-trasero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Monument", "Helvetica", Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+    opacity: 1;
   }
   ::-webkit-scrollbar {
     width: 5px;

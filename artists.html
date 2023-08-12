@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artistas</title>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/artistas.css">
 
     <link rel="icon" type="image/svg+xml" href="/images/Cattunesnegro.svg">
 
@@ -18,7 +18,7 @@
 </head>
 <body>
     
-    <header class="pagina-artistas">
+    <header>
         <nav class="Objetos">
             <div>
                 <a href="/" class="Principal" id="principio">CatTunes</a>
@@ -29,37 +29,20 @@
                 <a href="more.html" class="Miniobjeto" id="Contacto">Contacto</a>
             </div>
         </nav>
-        <div class="Contenido">
-            <a href="" class="Link_Carátula">
-                <img src="/images/spotligth.jpg" alt="" class="Carátula">
-            </a>
-            <div class="Información_Canción">
-                <h1 class="Título_canción">Spotligth</h1><br>
-                <h2 class="Artistas_canción">Silent Child</h2><br>
-                <div class="Rutas_canción">
-                    <a href="https://www.youtube.com/watch?v=3sYwL1k-HWo&ab_channel=SilentChild" class="Información_adicional_escuchar" target="_blank">Escuchar</a>
-                    <a href="#" class="Información_adicional_información">Información</a>
-                </div>
-            </div>
-        </div>
 
     </header>
+
     <main>
         <div class="Contenedor">
             <div class="Título_contenedor">
-                <h1>Para los amantes de la música electrónica</h1>
+                <h1>Artistas</h1>
             </div>
-            <p>Es un placer darles la bienvenida a CatTunes, el destino perfecto para sumergirse en los ritmos vibrantes y las emocionantes melodías de la música electrónica.</p>
-            <a href="#" class="Información_adicional_bienvenida">Más información</a>
+            <p>Explora el universo musical de los visionarios y creadores en la sección de Artistas Destacados! Sumérgete en las vibrantes sonoridades y los ritmos innovadores de quienes han moldeado la música electrónica a lo largo de los años. </p>
         </div>
-        <div class="fondojapones">
-            <img src="/images/bgjapanese.jpg" alt="">
-        </div>
-        <div class="Contenedor">
-            <div class="Título_contenedor">
-                <h1>Algunos de nuestros mejores artistas</h1>
+        <div class="Contenedor2">
+            <div class="Título_contenedor2">
+                <h1>Destacados</h1>
             </div>
-            <p>En CatTunes, te invitamos a explorar una ecléctica selección de artistas que representan la vanguardia de la música electrónica. Desde los icónicos pioneros que sentaron las bases del género hasta los talentos emergentes que están dando forma al futuro, nuestra plataforma te ofrece un viaje sonoro único y emocionante.</p>
         </div>
         <div class="galeria">
             <div class="imagengaleria">
@@ -75,51 +58,126 @@
                 <div class="contenedor-trasero" data-artista="Avicii">Avicii</div>
             </div>
         </div>
-        <div class="Contenedor">
-            <a href="#" class="Información_adicional_bienvenida">Más información</a>
-        </div>
-        <div class="Contenedor">
-            <div class="Título_contenedor">
-                <h1>Músicas más escuchadas del año</h1>
+        <div class="galeria">
+            <div class="imagengaleria">
+                <img src="/images/alanwalker.jpg" alt="Daft Punk">
+                <div class="contenedor-trasero" data-artista="Daft Punk">Alan Walker</div>
             </div>
-            <p>Sumérgete en el emocionante mundo de las canciones electrónicas más escuchadas en CatTunes. Nuestra plataforma te ofrece una selección cuidadosamente curada de éxitos electrónicos que han capturado los corazones y oídos de audiencias en todo el mundo. </p>
-        </div>
-        <div class="galeria_canciones">
-            <div class="imagen_galeria_canciones">
-                <img src="/images/starboy.jpg" alt="Song">
-                <div class="contenedor-trasero-canciones" data-artista="Starboy">
-                    <h1>Starboy</h1>
-                    <h5>The Weeknd and Daft Punk</h5>
-                </div>
+            <div class="imagengaleria">
+                <img src="/images/jean.jpg" alt="Skrillex">
+                <div class="contenedor-trasero" data-artista="Skrillex">Jean-Michel</div>
             </div>
-            <div class="imagen_galeria_canciones">
-                <img src="/images/happier.jpg" alt="Song">
-                <div class="contenedor-trasero-canciones" data-artista="Happier">
-                    <h1>Happier</h1>
-                    <h5>Marshmello</h5>
-                </div>
-            </div>
-            <div class="imagen_galeria_canciones">
-                <img src="/images/faded.jpg" alt="Song">
-                <div class="contenedor-trasero-canciones" data-artista="Daft Punk">
-                    <h1>Faded</h1>
-                    <h5>Alan Walker and Iselin Løken Solheim</h5>
-                </div>
-            </div>
-            <div class="imagen_galeria_canciones">
-                <img src="/images/wakemeup.jpg" alt="Song">
-                <div class="contenedor-trasero-canciones" data-artista="Daft Punk">
-                    <h1>Wake Me Up</h1>
-                    <h5>Avicii</h5>
-                </div>
+            <div class="imagengaleria">
+                <img src="/images/martin.jpg" alt="Avicii">
+                <div class="contenedor-trasero" data-artista="Avicii">Martin Garrix</div>
             </div>
         </div>
-        <div class="Contenedor">
-            <a href="#" class="Información_adicional_bienvenida">Más información</a>
+        <div class="Contenedor2">
+            <div class="Título_contenedor2">
+                <h1>Lista de Tunners</h1>
+            </div>
         </div>
-        <div class="fondojapones">
-            <img src="/images/bgjapaneseotro.jpg" alt="">
+
+        <style>
+            .galeria2 {
+                padding-top: 2%;
+                display: flex;
+                overflow-x: auto;
+                overflow-y: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              .imagengaleria2 {
+                position: relative;
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                margin-right: 22px;
+                cursor: pointer;
+                transition: transform 0.5s;
+              }
+              .imagengaleria2 img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              .imagengaleria2:hover {
+                transform: rotateY(180deg);
+              }
+              .contenedor-trasero2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-family: "Monument", "Helvetica", Arial, sans-serif;
+                font-size: 25px;
+                padding: 20px;
+                box-sizing: border-box;
+                backface-visibility: hidden;
+                transform-style: preserve-3d;
+                transition: opacity 0.3s, transform 0.3s;
+                pointer-events: none;
+                opacity: 0;
+                transform: scaleX(-1);
+              }
+              .imagengaleria2:hover .contenedor-trasero2 {
+                opacity: 1;
+                transform: rotateY(0) scaleX(-1);
+              }
+          </style>
+
+        <div class="galeria2">
+            <div class="imagengaleria2">
+                <img src="https://i1.sndcdn.com/artworks-000154403045-s6yv8a-t500x500.jpg" alt="Daft Punk">
+                <div class="contenedor-trasero2" data-artista="Daft Punk">Nicky Romero</div>
+            </div>
+            <div class="imagengaleria2">
+                <img src="https://i.discogs.com/Xx33uhQDl-doCAKOCpUjmXep8zY3D4Pgy6uZgTEDRQ0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTE5OTA1/NzEtMTYzNDY5NjUy/Mi03Mjg0LnBuZw.jpeg" alt="Daft Punk">
+                <div class="contenedor-trasero2" data-artista="Daft Punk">Zedd</div>
+            </div>
+            <div class="imagengaleria2">
+                <img src="https://yt3.googleusercontent.com/OkpSL6hWOm9ZWq7JBhznXgys5TRZ-yVzjNV9U6nkpno-OEFZiTPsGnQHYU517yWwgjjhud2ZRtQ=s900-c-k-c0x00ffffff-no-rj" alt="Daft Punk">
+                <div class="contenedor-trasero2" data-artista="Daft Punk">ColBreakz</div>
+            </div>
+            <div class="imagengaleria2">
+                <img src="https://d3vhc53cl8e8km.cloudfront.net/artists/2729/An5Eem4Iauj2pibSBhelj4wId1yNz77TuMie0txP.jpeg" alt="Daft Punk">
+                <div class="contenedor-trasero2" data-artista="Daft Punk">Nitro Fun</div>
+            </div>
+            <div class="imagengaleria2">
+                <img src="https://i1.sndcdn.com/avatars-000005109619-et9rh8-t500x500.jpg" alt="Daft Punk">
+                <div class="contenedor-trasero2" data-artista="Daft Punk">F-777</div>
+            </div>
         </div>
+        <div class="galeria2">
+            <div class="imagengaleria2">
+                <img src="https://www.latercera.com/resizer/OY4zNJwURWDYlpiT0fWs08L61eQ=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/PSFRCRZM6ZBUJBEA5VJIC5L6CQ.jpeg" alt="Daft Punk">
+                <div class="contenedor-trasero2" data-artista="Daft Punk">Calvin Harris</div>
+            </div>
+            <div class="imagengaleria2">
+                <img src="https://ca-times.brightspotcdn.com/dims4/default/e2632ee/2147483647/strip/true/crop/963x606+0+0/resize/1200x755!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ff9%2Fb0%2F9b0bab0241c1b13abfa1b3a10a9f%2Fdavid-guetta-3.jpg" alt="Daft Punk">
+                <div class="contenedor-trasero2" data-artista="Daft Punk">David Guetta</div>
+            </div>
+            <div class="imagengaleria2">
+                <img src="https://i.iheart.com/v3/catalog/artist/61055?ops=fit(720%2C720)" alt="Daft Punk">
+                <div class="contenedor-trasero2" data-artista="Daft Punk">Tiësto</div>
+            </div>
+            <div class="imagengaleria2">
+                <img src="https://pbs.twimg.com/profile_images/1461881745167552513/V7Y--GNo_400x400.jpg" alt="Daft Punk">
+                <div class="contenedor-trasero2" data-artista="Daft Punk">Geoxor</div>
+            </div>
+            <div class="imagengaleria2">
+                <img src="https://assets.tapcart.com/ae15119c6cf892741f5066959a278025_appIcon.png" alt="Daft Punk">
+                <div class="contenedor-trasero2" data-artista="Daft Punk">Marsmello</div>
+            </div>
+        </div>
+        
         <div class="Contenedor">
             <div class="Título_contenedor">
                 <h1>Conoce más acerca de CatTunes</h1>
@@ -130,7 +188,6 @@
             <a href="#principio" class="Información_adicional_bienvenida">Volver al principio</a>
         </div>
     </main>
-    
     <hr>
     <footer class="footer">
         <div class="container">

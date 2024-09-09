@@ -5,7 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Search</title>
 </head>
+<style>
+    body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center; /* Alineamiento horizontal (X) */
+        align-items: center; /* Alineamiento vertical (Y) */
+    }
+    .rojo {
+        width: 80%;
+        height: 80%;
+        background-color: red;
+        display: flex;
+        flex-direction: column; /* Al aplicar column, las propiedades justify content y aling itemps se invierten*/
+        align-items: start; 
+        justify-content: center;
+        /*
+        ESTO ES PARA JUSTIFY CONTENT
+        space-around: posiciona con espacio en el borde y ese espacio está 2 veces entre los elementos
+        space-evenly: distrubuye los elementos con un espacio idéntico en el borde y entre los elementos
+        space-between: pega los elementos a los bordes y les da espacio entre ellos
+        */
+    }
+    .verde {
+        width: 30%;
+        height: 50%;
+        background-color: green;
+    }
+    .amarillo {
+        width: 30%;
+        height: 50%;
+        background-color: yellow;
+    }
+</style>
 <body>
-    <h1>Página de búsqueda avanzada</h1>
+    <div class="rojo">
+        <div class="verde"></div>
+        <div class="amarillo"></div>
+    </div>
 </body>
 </html>

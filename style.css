@@ -1,0 +1,30 @@
+body { /* Siempre agregar al contenedor del Body */
+    width: 100%;
+    height: 100vh; /* Agregar esto siempre */
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h1 {
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.g {
+    color: #4285F4;
+}
+
+.o1 {
+    color: #DB4437;
+}
+
+.o2 {
+    color: #F4B400;
+}
+
+.l {
+    color: #0F9D58;
+}
